@@ -1,0 +1,79 @@
+header {
+    font-family: Futura, Trebuchet MS;
+    font-weight: bold condensed;
+    color: black; 
+    font-size: 80px;
+    padding: 30px 0px;
+}
+h1 {
+    font-family: Futura, Trebuchet MS;
+    font-weight: normal;
+    text-align: right;
+    color: black; 
+    font-size: 35px;
+    padding: 6px;
+}
+h2 {
+    font-family: Futura, Trebuchet MS;
+    font-weight: normal;
+    color: black; 
+    font-size: 35px;
+    padding: 6px;
+}
+ul {
+    font-family: Futura, Trebuchet MS;
+    font-weight: normal;
+    color: black; 
+    font-size: 45px;
+    padding: 0% 7%;
+    list-style-type: none;
+}
+li {
+    margin: 30px
+}
+p {
+    font-size: 25px;
+    padding: 0% 14%;
+}
+.button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: #d8e6e7;
+    padding: 40px 50px;
+    font-family: Futura, Trebuchet MS;
+    font-size: 40px;
+    color: black;
+}
+.back {
+    background-color: #508aa8;
+    padding: 10px 15px;
+    font-family: Futura, Trebuchet MS;
+    font-size: 20px;
+    color: black;
+    border: none;
+}
+.addProject {
+    background-color: #d8e6e7;
+    padding: 20px 25px;
+    font-family: Futura, Trebuchet MS;
+    font-size: 20px;
+    color: black;
+    border: none;
+}
+a:link { 
+    text-decoration: none; 
+}
+.element {
+    display: inline-block;
+    width: 45%;
+    /* height: 150px; */
+}
+.element2 {
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+}
+.center {
+    text-align: center;
+}
