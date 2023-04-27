@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>YarnShed</title>
+    <link rel="stylesheet" type="text/css" href="styleMain.css"/>
+</head>
+
+<body style="background-color: #a2c4c9;">
+    <div class="element">
+        <a href="main.html"><header><img id="yarn" src="Yarn Ball (4).jpg" width="110" />YarnShed</header></a>
+    </div>
+    <div class="element">
+        <h1><a href="login.html">Log Out</a></h1>
+    </div>
+    <br />
+
+    <div class="element2">
+        <a href="rowCounter.html" class="back">Back</a>
+    </div>
+    <br /> <br />
+ 	
+    <div class="container">
+        <div id="decrement-count">
+            <input type="image" id="down-arrow" width="200" src="left arrow.jpg" />
+        </div>
+        <div id="total-count">
+        </div>
+        <div id="increment-count">
+            <input type="image" id="up-arrow" width="200" src="right arrow.jpg" />
+        </div>
+    </div>   
+
+    <script>
+        const incrementCount = document.getElementById("increment-count");
+        const decrementCount = document.getElementById("decrement-count");
+        const totalCount = document.getElementById("total-count");
+        var count = 0;
+        totalCount.innerHTML = count;
+
+        const handleIncrement = () => {
+            count++;
+            totalCount.innerHTML = count;
+        };
+        const handleDecrement = () => {
+            count--;
+            totalCount.innerHTML = count;
+        };
+
+        incrementCount.addEventListener("click", handleIncrement);
+        decrementCount.addEventListener("click", handleDecrement);
+
+    </script>
+
+</body>
+
+</html>

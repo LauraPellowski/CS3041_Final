@@ -70,7 +70,7 @@ a:link {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 400px;
 }
 .element {
     display: inline-block;
@@ -85,5 +85,6 @@ a:link {
     text-align: center;
 }
 #total-count {
-    padding: 5px;
+    font-size: 500px;
+    padding: 100px;
 }
