@@ -34,7 +34,10 @@
                 ul.appendChild(p);
             }
             var destination=prompt("Would you like to add another counter (Y/N)");
-            anotherCounter(destination);
+            if(destination !== null) {
+                anotherCounter(destination);
+            }
+
 
         }
         function anotherCounter(destination) {
@@ -54,7 +57,7 @@
             /*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
             var destination=prompt("Enter Project Name");
             //if the user entered a non-empty string executes the following
-            if(destination !== ""){ 
+            if(destination !== null){ 
                 /*create a brand new element and sets its innerHTML value. Note that it is not yet inserted in the DOM.*/
                 var li=document.createElement("li"); 	
                 li.innerHTML=destination;
