@@ -22,6 +22,12 @@ h2 {
 .center {
     text-align: center
 }
+.centerPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
 .login {
     text-align: center;
     display: block;

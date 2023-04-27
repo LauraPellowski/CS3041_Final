@@ -65,6 +65,13 @@ p {
 a:link { 
     text-decoration: none; 
 }
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 .element {
     display: inline-block;
     width: 45%;
@@ -76,4 +83,7 @@ a:link {
 }
 .center {
     text-align: center;
+}
+#total-count {
+    padding: 5px;
 }
