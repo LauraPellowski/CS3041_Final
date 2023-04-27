@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>YarnShed</title>
+    <link rel="stylesheet" type="text/css" href="styleMain.css"/>
+</head>
+
+<body style="background-color: #a2c4c9;" onLoad="start();">
+    <div class="element">
+        <a href="main.html"><header><img id="yarn" src="Yarn Ball (4).jpg" width="110" />YarnShed</header></a>
+    </div>
+    <div class="element">
+        <h1><a href="login.html">Log Out</a></h1>
+    </div>
+
+    <h2>Welcome to the Rewards Garden!</h2>
+    <h3>Because you've been doing such a good job crafting, the garden creatures made a special dance for you!</h3>
+
+    <img id="creature1" src="garden creature1.jpg" alt="drawing of a cute creature" width="200">
+
+    <script>
+        function init() {
+            img = document.getElementById('creature1');
+            img.style.position= 'relative'; 
+            img.style.left = '0px'; 
+        }
+        function moveRight() {
+            position = parseInt(img.style.left);
+            if(position <= 1000) {
+                img.style.left = position + 5 + 'px';
+                animate = setTimeout(moveRight, 20);    // call moveRight in 20msec
+            }
+            else {
+                img.style.left = position - 5 + 'px';
+                animate = setTimeout(moveRight, 20);    // call moveRight in 20msec
+            }
+           
+        }
+
+        function start() {
+            init();
+            moveRight();
+        }
+    </script>
+
+</body>
+
+</html>

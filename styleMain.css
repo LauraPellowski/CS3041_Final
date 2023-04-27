@@ -20,6 +20,13 @@ h2 {
     font-size: 35px;
     padding: 6px;
 }
+h3 {
+    font-family: Futura, Trebuchet MS;
+    font-weight: bold;
+    color: black; 
+    font-size: 20px;
+    padding: 0px;
+}
 ul {
     font-family: Futura, Trebuchet MS;
     font-weight: normal;
@@ -34,6 +41,13 @@ li {
 p {
     font-size: 25px;
     padding: 0% 14%;
+}
+div {
+    font-family: Futura, Trebuchet MS;
+    font-weight: normal;
+    color: black; 
+    font-size: 20px;
+    padding: 15px;
 }
 .button {
     text-align: center;
@@ -83,6 +97,13 @@ a:link {
 }
 .center {
     text-align: center;
+}
+.submit {
+    font-family: Futura, Trebuchet MS;
+    font-weight: normal;
+    color: black; 
+    font-size: 15px;
+    padding: 6px;
 }
 #total-count {
     font-size: 500px;

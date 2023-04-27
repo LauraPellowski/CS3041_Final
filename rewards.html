@@ -12,10 +12,44 @@
     <div class="element">
         <h1><a href="login.html">Log Out</a></h1>
     </div>
+    <br />
+    <div class="element2">
+        <a href="main.html" class="back">Back</a>
+    </div>
+    <div class="element">
+        <a href="danceParty.html"><button id="danceParty" class="addProject">DANCE PARTY!!</button></a> 
+    </div>
 
-    <header>UNDER CONSTRUCTION</header>
-    <h2>check back later!</h2>
+    <div>   
+        <h3>Fill out this form to get donation rewards!</h3>   
+		<form method="get" id="donationForm">             
+            <label for="place">Place of Donation:</label>
+            <input type="text" name="place" id="place" required>
+            <br /> <br />
+            <label for="number">Number of Items Donated:</label>
+            <input type="number" name="number" id="number" required>
+            <br /> <br />  
+			<input type="submit" value="Submit" class="submit" onclick=addReward();>          
+		</form>   
+        <!-- <button id="newRewardButton", onclick="addReward();" class="submit">Claim Reward!</button>        -->
+	</div> 
+    <div>
+        <h3>My Rewards:</h3>
+    </div>
+    
+    <ul id="demo"></ul>
 
+    <script> 
+        function addReward() {
+            var form = document.getElementById("donationForm");
+            var number = form.elements[1].value;
+            //document.getElementById("demo").innerHTML = number;
+            var img = document.createElement("img");
+            img.src = "Yarn Ball (4).jpg";
+            var ul=document.getElementById("demo");
+            ul.appendChild(img);
+        }
+    </script>
 
 </body>
 
