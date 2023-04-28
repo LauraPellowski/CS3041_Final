@@ -12,34 +12,72 @@
     <div class="element">
         <h1><a href="login.html">Log Out</a></h1>
     </div>
-
-    <h2>Welcome to the Rewards Garden!</h2>
+    <div class="element2">
+        <a href="rewards.html" class="back">Back</a>
+    </div>
+    <div class="element2">
+        <h2>Welcome to the Rewards Garden!</h2>
+    </div>
     <h3>Because you've been doing such a good job crafting, the garden creatures made a special dance for you!</h3>
-
-    <img id="creature1" src="garden creature1.jpg" alt="drawing of a cute creature" width="200">
+    <br /> <br />
+    <img id="creature1" src="garden creature1.jpg" alt="drawing of a cute creature" width="175">
+    <br />
+    <div class="element"> 
+        <img id="creature2" src="garden creature2.jpg" alt="drawing of a cute creature" width="275">
+    </div>
+    <div class="element"> 
+        <img id="creature3" src="garden creature3.jpg" alt="drawing of a cute creature" width="275">
+    </div>
+    <br />
 
     <script>
         function init() {
-            img = document.getElementById('creature1');
-            img.style.position= 'relative'; 
-            img.style.left = '0px'; 
+            img1 = document.getElementById('creature1');
+            img1.style.position= 'relative'; 
+            img1.style.left = '200px'; 
+            img2 = document.getElementById('creature2');
+            img2.style.position= 'relative'; 
+            img2.style.left = '0px'; 
+            img3 = document.getElementById('creature3');
+            img3.style.position= 'relative'; 
+            img3.style.left = '300px'; 
         }
         function moveRight() {
-            position = parseInt(img.style.left);
+            position = parseInt(img1.style.left);
             if(position <= 1000) {
-                img.style.left = position + 5 + 'px';
+                img1.style.left = position + 7 + 'px';
+                img1.style.transform = img1.style.transform + 'rotate(5deg)';
+                img2.style.left = parseInt(img2.style.left) + 3 + 'px';
+                img2.style.transform = 'rotate(0deg)';
+                img3.style.left = parseInt(img3.style.left) - 3 + 'px';
+                img3.style.transform = 'scale(1.5, 1)';
                 animate = setTimeout(moveRight, 20);    // call moveRight in 20msec
             }
             else {
-                img.style.left = position - 5 + 'px';
+                animate = setTimeout(moveLeft, 20);    // call moveRight in 20msec
+            }
+        function moveLeft() {
+            position = parseInt(img1.style.left);
+            if(position >= 300) {
+                img1.style.left = position - 7 + 'px';
+                img1.style.transform = img1.style.transform + 'rotate(5deg)';
+                img2.style.left = parseInt(img2.style.left) - 3 + 'px';
+                img2.style.transform = 'rotate(180deg)';
+                img3.style.left = parseInt(img3.style.left) + 3 + 'px';
+                img3.style.transform = 'scale(1, 1)';
+                animate = setTimeout(moveLeft, 20);    // call moveRight in 20msec
+            }
+            else {
                 animate = setTimeout(moveRight, 20);    // call moveRight in 20msec
             }
+        }
            
         }
 
         function start() {
             init();
             moveRight();
+
         }
     </script>
 
