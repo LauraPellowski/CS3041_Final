@@ -32,31 +32,44 @@
                 if(number >= 0 && number <= 100) {
                     var i = 0;
                     if(number >= 0 && number < 10) {
+                        var ul=document.getElementById("demo");
+                        var p = document.createElement("p")
+                        p.innerHTML = "You Got Yarn! Donate more to see what reward comes next"
+                        ul.appendChild(p);
                         var img= document.createElement("img");
                         img.src = "Yarn Ball (4).jpg";
-                        img.style.transform = 'scale(0.1, 0.1)';
-                        var ul=document.getElementById("demo");
+                        img.style.transform = 'scale(0.4, 0.4)';
                         ul.appendChild(img);
                     }
                     else if(number >= 10 && number < 50) {
+                        var ul=document.getElementById("demo");
+                        var p = document.createElement("p")
+                        p.innerHTML = "You Got Ollie! Your first garden creature! Donate more to see what reward comes next"
+                        ul.appendChild(p);
                         var img= document.createElement("img");
                         img.src = "garden creature1.jpg";
-                        img.style.transform = 'scale(0.7, 0.7)';
-                        var ul=document.getElementById("demo");
+                        img.style.transform = 'scale(0.5, 0.5)';
                         ul.appendChild(img);
+
                     }
                     else if(number >= 50 && number < 100) {
+                        var ul=document.getElementById("demo");
+                        var p = document.createElement("p")
+                        p.innerHTML = "You Got Maisie! Your second garden creature! Donate more to see what reward comes next"
+                        ul.appendChild(p);
                         var img= document.createElement("img");
                         img.src = "garden creature2.jpg";
-                        img.style.transform = 'scale(0.7, 0.7)';
-                        var ul=document.getElementById("demo");
+                        img.style.transform = 'scale(0.5, 0.5)';
                         ul.appendChild(img);
                     }
                     else {
+                        var ul=document.getElementById("demo");
+                        var p = document.createElement("p")
+                        p.innerHTML = "You Got Theo! Your last garden creature! Congrats, You've unlocked all rewards!"
+                        ul.appendChild(p);
                         var img= document.createElement("img");
                         img.src = "garden creature3.jpg";
-                        img.style.transform = 'scale(0.7, 0.7)';
-                        var ul=document.getElementById("demo");
+                        img.style.transform = 'scale(0.5, 0.5)';
                         ul.appendChild(img);
                     }
                 }
